@@ -4,7 +4,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  const email = document.getElementById('phone').value;
+  const phone = document.getElementById('phone').value;
   const message = document.getElementById('message').value;
 
   const feedback = `Thank you, ${name}! We have received your message.`;
