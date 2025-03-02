@@ -1,9 +1,12 @@
-const express = require('express');
+const express = require("express");
+const path = require("path");
+
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// Define your routes and middleware here
+// Palvellaan staattisia tiedostoja
+app.use(express.static(path.join(__dirname)));
 
-const server = app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+const PORT = 3000;
+server.listen(PORT, () => {
+      console.log(`Server is running on http://localhost: ${PORT}`);
+      });
